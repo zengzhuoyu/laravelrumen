@@ -32,7 +32,7 @@
 
       <hr>
 
-      <p>还没账号？<a href="{{ ('signups') }}">现在注册！</a></p>
+      <p>还没账号？<a href="{{ ('signup') }}">现在注册！</a></p>
     </div>
   </div>
 </div>
