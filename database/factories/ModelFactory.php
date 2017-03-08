@@ -31,11 +31,22 @@ $factory->define(App\Models\User::class, function (Faker\Generator $faker) {
     //     'updated_at' => $date_time,
     // ];    
     
+    // return [
+    //     'name' => $faker->name,
+    //     'email' => $faker->safeEmail,
+    //     'is_admin' => false,
+    //     'password' => $password ?: $password = bcrypt('123123'),
+    //     'remember_token' => str_random(10),
+    //     'created_at' => $date_time,
+    //     'updated_at' => $date_time,
+    // ];    
+
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
         'is_admin' => false,
-        'password' => $password ?: $password = bcrypt('123123'),
+        'activated' => true,
+        'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
         'created_at' => $date_time,
         'updated_at' => $date_time,
